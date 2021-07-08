@@ -1,0 +1,15 @@
+::1 - - [04/Jul/2021:21:19:06 +0000] "POST /api/user/login HTTP/1.1" 200 200 "-" "PostmanRuntime/7.28.0"
+::1 - - [04/Jul/2021:21:21:35 +0000] "POST /api/user/login HTTP/1.1" 200 200 "-" "PostmanRuntime/7.28.0"
+POST /api/user/login 200 3430.925 ms - 200 {"email":"tomeelo2g@gmail.com","password":"1234567"} - 66
+POST /api/user/login 200 342.375 ms - 200 {"email":"tomeelo2g@gmail.com","password":"1234567"} - 66
+[05/Jul/2021:18:48:24 +0000] POST /api/user/login 200 883.178 ms - 200 {"email":"tomeelo2g@gmail.com","password":"1234567"} - 66
+[05/Jul/2021:18:50:06 +0000] POST /api/user/register 400 15.501 ms - 18 {} - -
+[05/Jul/2021:18:50:14 +0000] POST /api/user/register 400 1.683 ms - 18 {} - -
+[05/Jul/2021:18:50:22 +0000] POST /api/user/register 400 1.304 ms - 18 {} - -
+[05/Jul/2021:18:50:47 +0000] POST /api/user/register 400 1.641 ms - 18 {} - -
+[05/Jul/2021:18:50:51 +0000] POST /api/user/register 400 7.797 ms - 18 {} - -
+[05/Jul/2021:18:52:55 +0000] POST /api/user/register - - ms - - - - -
+[05/Jul/2021:18:54:43 +0000] POST /api/user/register - - ms - - - - -
+[05/Jul/2021:18:55:41 +0000] POST /api/user/register 400 17.100 ms - 18 {} - -
+[05/Jul/2021:18:56:09 +0000] POST /api/user/register 400 3.861 ms - 18 {} - -
+[05/Jul/2021:18:56:58 +0000] POST /api/user/login - - ms - - {"email":"tomeelo2g@gmail.com","password":"1234567"} - 66
