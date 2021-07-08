@@ -15,7 +15,7 @@ router.get('/getByDateRange', verify, (req, res) => {
 
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
-    console.log("ReponseData", { li: limit, pa: page });
+    //console.log("ReponseData", { li: limit, pa: page });
     
     // read json file
     const JsonData = jsonfile.readFileSync(file);
@@ -23,7 +23,7 @@ router.get('/getByDateRange', verify, (req, res) => {
     var result = JsonData.alarms.filter(item => new Date(item.timestamp).getTime() > new Date(startDate).getTime() && new Date(item.timestamp) < new Date(endDate).getTime())
     const response = result.slice(startIndex, endIndex);
     const { length } = JSON.stringify(result);
-    console.log("ReponseData", response);
+    //console.log("ReponseData", response);
 
     const resultData = {
         total_page: length / limit,
@@ -43,7 +43,7 @@ router.get('/getByDateRange', verify, (req, res) => {
 router.get('/GetLocationById', verify, (req, res) => {
     const file = '../data.1625230922.json';
     const locationId = req.query.id;
-    console.log("locationId", locationId);
+   // console.log("locationId", locationId);
     const JsonData = jsonfile.readFileSync(file);
     var result = JsonData.locations.filter(item => item.id == locationId);
     const resultData = {

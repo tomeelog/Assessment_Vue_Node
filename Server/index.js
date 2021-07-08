@@ -8,6 +8,8 @@ var path = require('path');
 const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
 const eventRoute = require('./routes/events');
+const cors = require('cors');
+
 
 dotenv.config();
 
@@ -16,6 +18,7 @@ mongoose.connect(
     process.env.DB_CONNECT, { useNewUrlParser: true}, () => console.log('connected to db')
 );
 app.use(express.json()); 
+app.use(cors({origin:'*'}));
 //import routes
 app.use('/api/user', authRoute);
 app.use('/api/posts', postRoute);
