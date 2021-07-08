@@ -5,9 +5,9 @@
 
 Get the code by either cloning this repository using git
 
-    > git clone https://github.com/sanity-io/example-frontend-vue-js.git
+    > git clone https://github.com/tomeelog/Assessment_Vue_Node.git
 
-... or [downloading source code](https://github.com/sanity-io/example-frontend-vue-js/archive/master.zip) code as a zip archive.
+... or [downloading source code](https://github.com/tomeelog/Assessment_Vue_Nodemaster.zip) code as a zip archive.
 
 Once downloaded, open the terminal in the project directory, and continue with:
 
